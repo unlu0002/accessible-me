@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: beige;
   margin: 0;
   padding: 0;
 }
@@ -68,4 +68,25 @@ form button {
 
 .site-footer {
   padding: 2rem 0;
+}
+
+/* Back-to-Top button style */
+#btn-back-to-top {
+  display:initial;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 2.4rem;
+  text-decoration: none;
+}
+
+#btn-back-to-top:hover {
+  background-color: #929410;
 }

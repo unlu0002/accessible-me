@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,58 +10,65 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <div class="container">
-    <div class="site-header">
+  <div class="container" id="back-to-top">
+    <header class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav class="main-nav" aria-label="Main Navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#studio">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
+      </nav>
+      <img src="https://placekitten.com/1200/900" class="banner" alt="Jam Box Studios Banner">
+    </header>
+    <main class="main-content" id="home">
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
+      <section class="owner">
+        <h2>Meet the owner</h2>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+          <li>Email: <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
+          <li>Phone: <a href="tel:613-000-0000">613-000-0000</a></li>
         </ul>
-        <h1>Address</h1>
+        <h2>Address</h2>
         <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+          Jambox Studios<br>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">123 Guitar Road</span>,<br>
+            <span itemprop="addressLocality">Musicville</span>, <span itemprop="addressRegion">Danceistan</span><br>
+            <span itemprop="postalCode">B3T 0L0</span>
+          </span>
         </p>
-      </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
+      </section>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
-          <button type="submit">Send</button>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" placeholder="Full Name" aria-label="Full Name">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Email" aria-label="Email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject" aria-label="Subject">
+          <label for="message"><b>Your Message</b></label>
+          <textarea id="message" aria-label="Your Message"></textarea>
+          <button type="submit" aria-label="Send">Send</button>
         </form>
-      </div>
-    </div>
-    <div class="site-footer">
+      </section>
+    </main>
+    
+    <a href="#back-to-top" id="btn-back-to-top" aria-label="Back to Top">Back to Top ↑</a>
+
+    <footer class="site-footer">
       &copy; 2021 Jam Box Studios
-    </div>
+    </footer>
+    
+   
   </div>
 </body>
-
 </html>
